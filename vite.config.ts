@@ -8,6 +8,7 @@ config();
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "https://minegame01.github.io/IMineTodo",
   build: {
     outDir: "./build",
   }
