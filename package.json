@@ -1,0 +1,64 @@
+{
+  "name": "iminetodo",
+  "homepage": "https://minegame01.github.io/IMineTodo",
+  "version": "1.0.0",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "vite",
+    "dev:host": "vite --host",
+    "build": "tsc -b && vite build",
+    "lint": "eslint --fix",
+    "preview": "vite preview",
+    "prepare": "husky",
+    "commit": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@hcaptcha/react-hcaptcha": "^1.11.0",
+    "@popperjs/core": "^2.11.8",
+    "@reduxjs/toolkit": "^2.4.0",
+    "@supabase/supabase-js": "^2.46.2",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "draft-js": "^0.11.7",
+    "export-from-json": "^1.7.4",
+    "react": "^18.3.1",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-redux": "^9.1.2",
+    "react-tooltip": "^5.28.0",
+    "sass": "^1.81.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/draft-js": "^0.11.18",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.15.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "gh-pages": "^6.2.0",
+    "globals": "^15.12.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.15.0",
+    "vite": "^6.0.1"
+  }
+}

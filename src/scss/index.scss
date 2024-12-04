@@ -1,0 +1,17 @@
+@import "./bootstrapUtils.scss";
+
+@import "./body.scss";
+@import "./preElement.scss";
+@import "./buttonDefault.scss";
+@import "./preBackground.scss";
+@import "./smoothDropAnimation.scss";
+@import "./switchCheckbox.scss";
+
+:root,
+[data-bs-theme="light"] {
+    --#{$prefix}pre-element-bg: #{$pre-element-bg};
+}
+    
+@include color-mode(dark, true) {
+    --#{$prefix}pre-element-bg: #{$pre-element-bg-dark};
+}

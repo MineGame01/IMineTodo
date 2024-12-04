@@ -1,0 +1,6 @@
+@import "../../../scss/smoothDropAnimation.scss";
+
+.smoothDropAnimation {
+    position: relative;
+    @include smoothDropAnimation(0.5s);
+}

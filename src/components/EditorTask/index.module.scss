@@ -1,0 +1,8 @@
+@import "../../scss/bootstrapUtils.scss";
+@import "../../scss/preElement.scss";
+
+.verticalBorder {
+    margin: 0 5px 0 5px;
+    color: var(--#{$prefix}pre-element-bg);
+    border-left: 2px solid;
+}

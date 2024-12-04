@@ -1,0 +1,19 @@
+.btn-default {
+    $btn-default-bg: $white;
+    $btn-default-border: shade-color($btn-default-bg, 3%);
+    @include button-variant(
+        $btn-default-bg, // background
+        $btn-default-border, // border
+        color-contrast($btn-default-bg), // color
+        shade-color($btn-default-bg, 8%), // hover-background
+        shade-color($btn-default-border, 3%), // hover-border
+        color-contrast(shade-color($btn-default-bg, 10%)), // hover-color
+        shade-color($btn-default-bg, 10%),  // active-background
+    )
+}
+
+@include color-mode(dark) {
+    .btn-default {
+        @include button-variant($pre-element-bg-dark, $pre-element-bg-dark);
+    }
+}

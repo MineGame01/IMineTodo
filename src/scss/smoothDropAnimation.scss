@@ -1,0 +1,17 @@
+@keyframes smoothDropAnimation {
+    0% {
+        bottom: 50px;
+        opacity: 0;
+    }
+    50% { bottom: 0 }
+    100% { opacity: 1 }
+}
+
+@mixin smoothDropAnimation($duration) {
+    animation-name: smoothDropAnimation;
+    animation-duration: $duration;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
