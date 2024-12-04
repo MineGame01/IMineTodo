@@ -38,7 +38,7 @@ export const AuthPage: React.FC = () => {
         }
     }
     
-    const handleRegister = (e: React.FormEvent<IAuthFormElement>, email: string, password: string) => {
+    const handleRegister = (_e: React.FormEvent<IAuthFormElement>, email: string, password: string) => {
         void dispatch(authorizationThunk({
             email,
             password,
@@ -48,7 +48,7 @@ export const AuthPage: React.FC = () => {
         resetCaptcha();
     }
 
-    const handleAuth = (e: React.FormEvent<IAuthFormElement>, email: string, password: string) => {
+    const handleAuth = (_e: React.FormEvent<IAuthFormElement>, email: string, password: string) => {
         void dispatch(authorizationThunk({
             email,
             password,

@@ -1,4 +1,3 @@
-import React from "react";
 import { ThemeProvider } from "./providers/ThemeProvider";
 import { Provider } from "react-redux";
 import { store } from "./store/store";

@@ -30,7 +30,7 @@ export const TaskControlPanel: React.FC<ITaskControlPanelProps> = ({
         dispatch(editTask({ id: null }))
     }
 
-    const handleChangeColorTask = (e: React.MouseEvent<HTMLButtonElement>, color: TColorTask) => {
+    const handleChangeColorTask = (_e: React.MouseEvent<HTMLButtonElement>, color: TColorTask) => {
         setColorEditingTask(color);
     }
 

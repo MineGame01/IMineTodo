@@ -23,7 +23,7 @@ export const getTaskListAuthUserThunkReducer = (create: ReducerCreators<ITodosAp
         return data;
     }, {
         options: {
-            condition: (arg, api) => {
+            condition: (_unused, api) => {
                 const state = api.getState() as TState;
                 const status = state.root.todosApp.status;
                 if (status !== "pending") return true

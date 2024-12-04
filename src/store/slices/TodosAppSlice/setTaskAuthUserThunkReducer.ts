@@ -26,7 +26,7 @@ export const setTaskAuthUserThunkReducer = (create: ReducerCreators<ITodosAppSli
         }
     }, {
         options: {
-            condition: (arg, api) => {
+            condition: (_unused, api) => {
                 const state = api.getState() as TState;
                 const status = state.root.todosApp.status;
                 const idAuthUser = state.root.auth.uid;
