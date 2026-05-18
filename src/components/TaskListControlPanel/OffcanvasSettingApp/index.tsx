@@ -6,9 +6,9 @@ import { useAppDispatch, useAppSelector } from "../../../hooks/storeHooks";
 import { setPreview } from "../../../store/slices/SettingAppSlice";
 import { ImportOrExportTask } from "./ImportOrExportTask";
 import LogoAppSVG from "./../../../assets/Logo.svg";
-import { Button } from "../../Button";
-import { authSet } from "../../../store/slices/AuthSlice";
-import { supabase } from "../../../supabase";
+// import { Button } from "../../Button";
+// import { authSet } from "../../../store/slices/AuthSlice";
+// import { supabase } from "../../../supabase";
 
 interface IOffcanvasSettingAppProps {
     themeMode: ThemeModeType,
@@ -21,19 +21,19 @@ export const OffcanvasSettingApp: React.FC<IOffcanvasSettingAppProps> = ({
 }) => {
     const themeMods: ThemeModeType[] = ["auto", "light", "dark"];
     const preview = useAppSelector(state => state.root.settingApp.preview);
-    const authUserEmail = useAppSelector(state => state.root.auth.email);
+    // const authUserEmail = useAppSelector(state => state.root.auth.email);
     const dispatch = useAppDispatch();
 
-    const handleExitAccount = async () => {
-        const { error } = await supabase.auth.signOut();
-        if (!error) {
-            dispatch(authSet({
-                email: null,
-                uid: null,
-                accessToken: null
-            }));
-        }
-    }
+    // const handleExitAccount = async () => {
+    //     const { error } = await supabase.auth.signOut();
+    //     if (!error) {
+    //         dispatch(authSet({
+    //             email: null,
+    //             uid: null,
+    //             accessToken: null
+    //         }));
+    //     }
+    // }
 
     return <article className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasSettingApp">
         <section className="offcanvas-header">
@@ -92,8 +92,8 @@ export const OffcanvasSettingApp: React.FC<IOffcanvasSettingAppProps> = ({
                 <li className="nav-item">
                     <ImportOrExportTask />
                 </li>
-                <hr />
-                <li>
+                {/* <hr /> */}
+                {/* <li>
                     <section>
                         <h5>Account</h5>
                         <p>Email: { authUserEmail ?? "Anonymous" }</p>
@@ -101,7 +101,7 @@ export const OffcanvasSettingApp: React.FC<IOffcanvasSettingAppProps> = ({
                             void handleExitAccount();
                         }} classNameStyle="btn-danger w-100">Exit</Button>
                     </section>
-                </li>
+                </li> */}
             </ul>
         </section>
     </article>
