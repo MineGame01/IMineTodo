@@ -56,7 +56,7 @@ export const EditorTask: React.FC<IEditorTaskProps> = ({
                 }}
                 customStyleMap={INLINE_STYLE_TASK_EDITOR}
                 editorState={editorStateTask}
-                placeholder="Content..."
+                placeholder="Click to edit..."
                 onChange={(editorState) => {
                     setEditorStateTask(editorState);
                 }}/>
