@@ -38,7 +38,7 @@ export const OffcanvasSettingApp: React.FC<IOffcanvasSettingAppProps> = ({
     return <article className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasSettingApp">
         <section className="offcanvas-header">
             <img className="me-1" src={LogoAppSVG} alt="Logo App" width={40} />
-            <h5 className="offcanvas-title">Setting</h5>
+            <h5 className="offcanvas-title">Settings</h5>
             <ButtonCloseSettingApp />
         </section>
         <hr />

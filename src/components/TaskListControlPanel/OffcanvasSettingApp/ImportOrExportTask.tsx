@@ -55,16 +55,19 @@ export const ImportOrExportTask = () => {
         }
     }
 
+
+
     return <section>
-        <h5>Import and Export TaskList</h5>
+        <h5>Import and Export task list</h5>
         <Button 
         classNameStyle="btn-default w-100"
-        onClick={handleExport}>Export JSON</Button>
+        onClick={handleExport}>Export to JSON</Button>
         <form onSubmit={handleImport} className="mt-1">
+            <label htmlFor="import-or-export-task-json-input">JSON file with to-do lists</label>
             <Input name="jsonInput" id="import-or-export-task-json-input" type="file" accept="application/json" />
             <Button 
             type="submit"
-            classNameStyle="btn-default w-100 mt-1">Import JSON</Button>
+            classNameStyle="btn-default w-100 mt-1">Import with JSON</Button>
         </form>
         {status && <div>{status}</div>}
     </section>

@@ -9,7 +9,7 @@ export const ButtonCloseSettingApp: React.FC = () => {
         name="Close Setting" 
         classNameStyle="btn-close" 
         data-tooltip-id="task-list-control-panel-close-setting-btn"
-        data-tooltip-content="Close Setting"
+        data-tooltip-content="Close Settings"
         data-bs-dismiss="offcanvas"/>
     </>
 }
