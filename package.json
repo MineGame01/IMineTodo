@@ -15,11 +15,6 @@
     "prepare": "husky",
     "commit": "cz"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.11.0",
     "@popperjs/core": "^2.11.8",
