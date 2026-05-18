@@ -24,7 +24,7 @@
     "@hcaptcha/react-hcaptcha": "^1.11.0",
     "@popperjs/core": "^2.11.8",
     "@reduxjs/toolkit": "^2.4.0",
-    "@supabase/supabase-js": "^2.46.2",
+    "@supabase/supabase-js": "^2.106.0",
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
     "draft-js": "^0.11.7",
